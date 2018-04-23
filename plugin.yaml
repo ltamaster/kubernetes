@@ -161,14 +161,6 @@ providers:
     script-file: pods-copy-file.py
     script-args: ${node.name}
     config:
-      - name: shell
-        type: String
-        title: "Shell"
-        description: "Shell used on the POD to run the command"
-        required: true
-        default: "/bin/bash"
-        renderingOptions:
-          groupName: Config
       - name: config_file
         type: String
         title: "Kubernetes Config File Path"
